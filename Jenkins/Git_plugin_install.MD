@@ -20,3 +20,7 @@ Git is one of the most popular tools for version control system. you can pull co
 
 - To find the git path
   #whereis git
+  
+- To clone Private repo
+  Generate new token on github and add the token into jenkins credentials.
+  
