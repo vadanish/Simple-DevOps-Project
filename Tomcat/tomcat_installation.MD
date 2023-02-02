@@ -71,3 +71,11 @@ goto tomcat home directory and Add below users to conf/tomcat-users.xml file
    ```
 1. Restart serivce and try to login to tomcat application from the browser. This time it should be Successful
 
+Integrate with jenkins and tomcat.
+step 1 : Plugin install on jenkins - "Deploy to container"
+step2 : create credentials on kjenkins for tomcat
+Manage jenkins > Manage credentials > jenkins > global credentials > select username & Password.
+Username : admin
+pass : admin
+
+
