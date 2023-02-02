@@ -16,14 +16,19 @@ Maven is a code build tool which used to convert your code to an artifact. this 
      wget http://mirrors.estointernet.in/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
      tar -xvzf apache-maven-3.6.1-bin.tar.gz
      ```
-	
+
+To find the JAVA Path
+# find / -name jvm or find / -name java-11*
+
 1. Setup M2_HOME and M2 paths in .bash_profile of the user and add these to the path variable
    ```sh
    vi ~/.bash_profile
-   M2_HOME=/opt/maven/apache-maven-3.6.1
+   M2_HOME=/opt/maven/apache-maven-3.8.7
    M2=$M2_HOME/bin
-   PATH=<Existing_PATH>:$M2_HOME:$M2
-   ```
+   JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.16.0.8-1.amzn2.0.1.x86_64
+   PATH=$PATH:$HOME/bin:$JAVA_HOME:$M2_HOME:$M2 
+```
+# source .bash_profile
 #### Checkpoint 
 1. logoff and login to check maven version
   
